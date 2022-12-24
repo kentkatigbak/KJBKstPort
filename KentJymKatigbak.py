@@ -1,6 +1,13 @@
 import streamlit as st
 from PIL import Image
-
+hide_menu = """
+<style>
+#MainMenu{
+    Visibility:hidden;
+}
+</style>
+"""
+st.markdown(hide_menu, unsafe_allow_html=True)
 #Introduction
 st.image("header.png")
 colA1, colA2 = st.columns([1,1.5])
